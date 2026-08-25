@@ -3,13 +3,195 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>adrychona.com</title>
+  <title>Adriana Hernandez Moreno — Living Résumé</title>
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 4rem auto; padding: 0 1rem; line-height: 1.5; }
+    :root {
+      --bg: #ffffff; --fg: #1a1a1a; --muted: #5a5a5a; --accent: #7a1f2b; --line: #e4e4e4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #14100f; --fg: #eee; --muted: #a8a8a8; --accent: #e0798a; --line: #2b2624; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg); color: var(--fg);
+      max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem;
+      line-height: 1.55;
+    }
+    header { display: flex; gap: 1.5rem; align-items: center; margin-bottom: 2.5rem; flex-wrap: wrap; }
+    header img { width: 128px; height: 128px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    h1 { margin: 0 0 .25rem; font-size: 1.6rem; }
+    .title { color: var(--accent); font-weight: 600; margin: 0 0 .4rem; }
+    .contact { color: var(--muted); font-size: .9rem; }
+    .contact a { color: inherit; }
+    h2 {
+      font-size: .8rem; text-transform: uppercase; letter-spacing: .08em;
+      color: var(--accent); border-bottom: 1px solid var(--line);
+      padding-bottom: .3rem; margin: 2.2rem 0 1rem;
+    }
+    ul { margin: .3rem 0; padding-left: 1.2rem; }
+    li { margin-bottom: .3rem; }
+    .job { margin-bottom: 1.4rem; }
+    .job h3 { margin: 0 0 .1rem; font-size: 1.05rem; }
+    .job .meta { color: var(--muted); font-size: .85rem; margin-bottom: .4rem; }
+    .competencies { columns: 2; column-gap: 2rem; }
+    .competencies li { break-inside: avoid; }
+    footer { color: var(--muted); font-size: .8rem; margin-top: 3rem; }
   </style>
 </head>
 <body>
-  <h1>adrychona.com</h1>
-  <p>Coming soon.</p>
+
+  <header>
+    <img src="photo.png" alt="Adriana Hernandez Moreno">
+    <div>
+      <h1>Adriana Valentina Hernandez Moreno</h1>
+      <p class="title">Customer Support Specialist · Atlassian Certified Expert Emeritus</p>
+      <p class="contact">
+        Santiago, Chile · +56 9 3317 7176<br>
+        <a href="https://linkedin.com/in/adrianavhernandez">linkedin.com/in/adrianavhernandez</a> ·
+        <a href="https://github.com/adrychona">github.com/adrychona</a>
+      </p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>
+      Customer Support Specialist with 8+ years working high-volume B2B SaaS support queues for global
+      enterprise customers. Resolved 1,882 tickets while holding First Response Time under 3 hours and a
+      4.8/5 average customer satisfaction score, delivering a working solution in the very first reply rather
+      than an acknowledgment. Combines hands-on debugging (JSON, SQL, Python) with a habit of turning
+      recurring issues into clear bug reports for QA and development teams and into help center articles that
+      deflect repeat tickets. Atlassian Certified Expert Emeritus with eight credentials and ten accreditations;
+      supports customers bilingually in English and Spanish.
+    </p>
+  </section>
+
+  <section>
+    <h2>Core Competencies</h2>
+    <ul class="competencies">
+      <li>Incident management, ticket triage, and resolution</li>
+      <li>SLA management and escalation handling</li>
+      <li>Root cause analysis (JSON, SQL, Python)</li>
+      <li>Jira Cloud and Data Center administration</li>
+      <li>Jira Service Management (ITSM) and Confluence</li>
+      <li>Data Center to Cloud migrations</li>
+      <li>Marketplace apps: CMJ, Project Configurator, TFS4JIRA, Comala, JSU, Agile Poker</li>
+      <li>Rovo and AI automation</li>
+      <li>Knowledge base authoring and documentation design</li>
+      <li>Customer training, onboarding, and mentoring</li>
+      <li>Reporting and dashboards</li>
+      <li>Model Context Protocol (MCP) server development</li>
+      <li>AI-assisted troubleshooting and response drafting</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>AI Tooling</h2>
+    <ul>
+      <li>Built a custom MCP server for Jira covering capabilities missing from Atlassian's official MCP, such as automation rule creation, that learns with each rule it builds.</li>
+      <li>Uses AI coding agents daily (Claude Code, OpenCode, Copilot) plus assistants like NotebookLM to speed up troubleshooting, log analysis, and first-response drafting on customer tickets.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <h3>Senior Customer Support Engineer</h3>
+      <div class="meta">ServiceRocket · Santiago, Chile · December 2025 – Present</div>
+      <ul>
+        <li>Owns key customer accounts including Personalis, Savvas, and Lawrence Berkeley National Laboratory, covering first response, ongoing contact, and monthly reporting.</li>
+        <li>Acts as senior escalation point for teams managing META, Skechers, KLA, and Cengage accounts.</li>
+        <li>Automated the annual customer HealthCheck with platform-limit and configuration metrics, reducing manual effort from 50% to 10%.</li>
+        <li>Rebuilt monthly reporting into a direct client deliverable and built JSM dashboards tracking SLA response, open cases, and team workload.</li>
+        <li>Built internal tooling adopted team-wide, including an engagement report generator and delivery status scripts for tech leads.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Senior Product Support Engineer @ Appfire</h3>
+      <div class="meta">ServiceRocket · Santiago, Chile · August 2024 – December 2025</div>
+      <ul>
+        <li>Promoted to senior engineer and subject matter expert for six Marketplace apps: Configuration Manager, Project Configurator, TFS4JIRA, Comala Document Management, Agile Poker, and JSU.</li>
+        <li>Served as the team's main escalation point, taking over complex cases other engineers could not resolve.</li>
+        <li>Selected for the Hypercare pilot program, handling large-scale migrations and feeding improvements into the company's migration playbook.</li>
+        <li>Represented Support in weekly development meetings, sharing user feedback and pushing bug fixes to release.</li>
+        <li>Created and led training sessions on administrative tools, integrations, and document management apps; mentored new hires on Jira and Confluence best practices.</li>
+        <li>Improved team operations with custom dashboards for individual engineers and manager-facing reporting.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Product Support Engineer @ Appfire</h3>
+      <div class="meta">ServiceRocket · Santiago, Chile · October 2022 – August 2024</div>
+      <ul>
+        <li>Resolved 1,882 technical support tickets across Jira Cloud and Data Center for customers worldwide, maintaining a 4.8/5 average CSAT score.</li>
+        <li>Held First Response Time under 3 hours by delivering a working solution in the very first email instead of an automated acknowledgment.</li>
+        <li>Provided recurring technical assistance to enterprise accounts including Apple, Dropbox, SanDisk, and Visa.</li>
+        <li>Authored 50+ knowledge base articles that cut resolution time for customers and fellow agents.</li>
+        <li>Debugged customer workflows directly using JSON, SQL, and Python to isolate root causes.</li>
+        <li>Partnered with QA to reproduce recurring bugs and accelerate permanent fixes; delivered extra coverage during critical migration windows.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Support Analyst (Atlassian)</h3>
+      <div class="meta">Solutions 4 Everyone · Santiago, Chile · October 2017 – October 2022</div>
+      <ul>
+        <li>Delivered end-to-end Jira and Confluence implementations and migrations across Cloud and Data Center, owning estimates, monitoring plans, and the customer relationship.</li>
+        <li>Built custom workflows and automation rules with JMWE, JMCF, and Jira Workflow Toolbox, matched to each client's business processes.</li>
+        <li>Implemented ecosystem apps including Insight (Assets), EazyBI, and Xray; configured Bitbucket, Bamboo, and Sourcetree for CI/CD pipelines.</li>
+        <li>Ran interactive client training sessions and post-migration consulting to drive tool adoption.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected Engagements</h2>
+    <ul>
+      <li><strong>Blue Yonder:</strong> built a multithreaded script mapping custom field data into Cloud Assets for over 1.5 million items within API limits, completing in 5 days work that would have taken months manually.</li>
+      <li><strong>Skims:</strong> tech lead for an ITSM implementation that passed UAT cleanly and expanded through a change order; delivered a Rovo agent that rewrites ticket summaries automatically.</li>
+      <li><strong>LinkedIn:</strong> engineered cleanup scripts that identify high-usage spaces and generate optimized schemes across a 700+ space environment.</li>
+      <li><strong>Maven Clinic:</strong> completed an Asana-to-JSM migration over a single weekend at short notice, protecting the customer's deadline.</li>
+      <li><strong>Atlassian ATP:</strong> delivered 20+ hours of certified Jira training on Atlassian's behalf to Morgan Stanley, Alberta Securities Commission, and DB Schenker.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>Atlassian Certified Expert (ACE) Emeritus</li>
+      <li>Atlassian Professional Certifications: ACP-120, ACP-420, ACP-520 (Cloud Organization Administration), ACP-620</li>
+      <li>ACH-800: Rovo Fundamentals</li>
+      <li>Cloud Migration Technical Delivery Accreditation</li>
+      <li>Certified ATP Instructor, delivering certified Jira training on behalf of Atlassian</li>
+      <li>ITIL® Foundation Certificate in IT Service Management</li>
+      <li>Eight Atlassian credentials and ten accreditations in total</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Leadership</h2>
+    <p>
+      Leads the ServiceRocket internship program end to end: designed its progression across platform
+      administration, migration accreditation, and ITSM delivery, placed interns on live customer work each
+      cohort, and personally mentored 12 interns across three cohorts. Six have been hired as full-time engineers.
+    </p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>Bachelor of Engineering in Computer Science</strong> (in progress)<br>
+    VIU – Universidad Internacional de Valencia · 2025–2029</p>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <p>Spanish (native) · English (professional working proficiency) · Italian (elementary)</p>
+  </section>
+
+  <footer>Updated 2026.W35</footer>
+
 </body>
 </html>
